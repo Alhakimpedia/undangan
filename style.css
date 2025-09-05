@@ -1,0 +1,22 @@
+
+* { margin:0; padding:0; box-sizing:border-box; scroll-behavior: smooth; }
+body { font-family: 'Roboto', sans-serif; background: #fff0f5; color:#333; overflow-x:hidden; }
+header { height:100vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/background.jpg') center/cover no-repeat; display:flex; flex-direction:column; justify-content:center; align-items:center; color:white; text-align:center; animation: fadeIn 2s ease-in; }
+header h1 { font-family: 'Great Vibes', cursive; font-size:60px; margin-bottom:20px; animation: slideDown 1.5s ease; }
+header p { font-size:20px; margin-bottom:30px; }
+#countdown { font-size:24px; background: rgba(255,255,255,0.2); padding:15px 25px; border-radius:10px; }
+section { padding:80px 20px; text-align:center; opacity:0; transform: translateY(50px); transition: all 1s ease; }
+section.active { opacity:1; transform: translateY(0); }
+section h2 { font-size:36px; margin-bottom:20px; color:#c71585; }
+section p { font-size:18px; margin-bottom:20px; line-height:1.6; max-width:700px; margin-left:auto; margin-right:auto; }
+.gallery { display:flex; flex-wrap:wrap; justify-content:center; }
+.gallery img { width:250px; margin:15px; border-radius:15px; transition: transform 0.3s; }
+.gallery img:hover { transform: scale(1.05) rotate(1deg); }
+.rsvp input, .rsvp textarea { padding:12px; margin:10px 0; width:80%; max-width:400px; border-radius:8px; border:1px solid #ccc; }
+.rsvp button { padding:12px 25px; background:#c71585; border:none; color:white; font-size:16px; cursor:pointer; border-radius:8px; transition: background 0.3s; }
+.rsvp button:hover { background:#ff69b4; }
+footer { background:#ffe4e1; text-align:center; padding:40px 20px; font-size:18px; }
+#musicControl { position: fixed; top:20px; right:20px; background:#c71585; color:white; padding:10px 15px; border-radius:50px; cursor:pointer; z-index:1000; box-shadow:0 4px 10px rgba(0,0,0,0.3); }
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+@keyframes slideDown { from {transform: translateY(-50px);} to {transform: translateY(0);} }
+@media (max-width:768px){ header h1{ font-size:40px;} section h2{ font-size:28px;} .gallery img{ width:180px;} }
